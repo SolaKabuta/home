@@ -4,7 +4,7 @@
 // import {Routes, Route, useLocation} from "react-router-dom";
 import Navbar from "./components/Header/Navbar.jsx";
 import Home from "./components/Content/Home.jsx";
-import HeroSection from "./components/Content/HeroSection.jsx";
+import HeroSection from "./components/Header/HeroSection.jsx";
 
 
 function App() {

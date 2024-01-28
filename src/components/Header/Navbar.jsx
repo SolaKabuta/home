@@ -1,11 +1,14 @@
 import IconHamburger from '/images/icon-hamburger.svg';
 import IconClose from '/images/icon-close.svg';
 
+import {useState} from "react";
+
 // OPEN BTN
 const handleClick = () => {
     const burgerMenu = document.getElementById('burgerMenu')
     const activeMenu = document.getElementById('activeMenu')
     activeMenu.classList.remove("hidden")
+    activeMenu.classList.add("ease-in-out duration-600")
 
 
 }
@@ -15,10 +18,20 @@ const x = () => {
     activeMenu.classList.remove('block')
     activeMenu.classList.add('hidden')
 
+
+
 }
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false)
+
+    const handleNav = () => {
+      setNav(!nav)
+    }
+
     return (
+
+
         <>
             <div
                 id={'Menu'}
@@ -26,13 +39,13 @@ const Navbar = () => {
                 <div
                     className={'absolute top-10 z-50'}>
                     <p
-                        className={'text-3xl text-white font-bold'}>
+                        className={'text-3xl text-white font-semibold'}>
                         room
                     </p>
                 </div>
                 {/*BURGER ICON*/}
                 <a
-                    className={'z-50'}
+                    className={'z-50 '}
                     id={'burgerMenu'}
                     href={'#'}
                     onClick={handleClick}>
@@ -45,7 +58,7 @@ const Navbar = () => {
             {/*ACTIVE*/}
             <div
                 id={'activeMenu'}
-                className={'absolute bg-white w-full h-36 hidden z-50'}>
+                className={'absolute bg-white w-full h-36 ease-in-out duration-700 hidden z-50'}>
                 <a
                     id={'iconClose'}
                     href={'#'}>

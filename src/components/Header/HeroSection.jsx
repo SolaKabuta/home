@@ -1,3 +1,4 @@
+// Import Hero Image Slides
 import MobileHero from '/images/mobile-image-hero-1.jpg'
 import MobileHero2 from '/images/mobile-image-hero-2.jpg'
 import MobileHero3 from '/images/mobile-image-hero-3.jpg'
@@ -16,7 +17,7 @@ import 'swiper/css/navigation';
 // import required modules
 import {Navigation, EffectFade, Pagination} from 'swiper/modules';
 import 'swiper/css/effect-fade';
-import SwiperNavBtns from "../SwiperNavBtns.jsx";
+import SwiperNavBtns from "./SwiperNavBtns.jsx";
 
 const HeroSection = () => {
     return (
