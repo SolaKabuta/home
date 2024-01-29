@@ -14,7 +14,7 @@ function App() {
     <>
         <div className={'content'}>
             <Navbar/>
-            <HeroSection/>
+            {/*<HeroSection/>*/}
             <Home/>
         </div>
     </>

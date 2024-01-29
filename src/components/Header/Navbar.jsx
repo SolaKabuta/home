@@ -35,7 +35,7 @@ const Navbar = () => {
         <>
             <div
                 id={'Menu'}
-                className={'flex justify-center'}>
+                className={'flex justify-center lg:hidden'}>
                 <div
                     className={'absolute top-10 z-50'}>
                     <p
@@ -45,7 +45,7 @@ const Navbar = () => {
                 </div>
                 {/*BURGER ICON*/}
                 <a
-                    className={'z-50 '}
+                    className={'z-50 lg:hidden'}
                     id={'burgerMenu'}
                     href={'#'}
                     onClick={handleClick}>

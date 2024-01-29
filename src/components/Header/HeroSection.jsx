@@ -30,7 +30,7 @@ const HeroSection = () => {
                          clickable: true,
                      }}
                      modules={[EffectFade, Navigation, Pagination]}
-                    className="mySwiper">
+                    className={"mySwiper lg:sticky"}>
                 <SwiperSlide>
                     <img
                         className={''}
@@ -52,11 +52,10 @@ const HeroSection = () => {
 
                 {/*NAVIGATION BUTTONS*/}
                 <div
-                    className={'absolute bottom-0 right-0 z-50 '}>
+                    className={'absolute bottom-0 right-0 z-50 lg:hidden'}>
                     <SwiperNavBtns/>
                 </div>
             </Swiper>
-
         </>
     );
 };
